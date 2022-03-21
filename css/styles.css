@@ -21,6 +21,31 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  outline: 2px solid tomato;
+}
+
+.container.padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.no-margin-top {
+  margin-top: 0px;
+}
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .link {
   text-decoration: none;
 }
@@ -92,8 +117,7 @@ body {
 
   padding-top: 200px;
   padding-bottom: 280px;
-  padding-left: 452px;
-  padding-right: 452px;
+  text-align: center;
   /* why right padding doesn't work? */
 }
 
@@ -138,10 +162,8 @@ body {
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 300px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 
   text-align: center;
 }
@@ -156,15 +178,25 @@ body {
   background-color: var(--contrast-text-color);
   font-size: 16px;
   line-height: 1.17;
+  width: 270px;
+
+  text-align: center;
+}
+
+.team-photo {
+  margin-bottom: 30px;
 }
 
 .team-name {
   font-weight: 500;
   color: var(--title-text-color);
+
+  margin-bottom: 10px;
 }
 
 .team-position {
   color: var(--primary-text-color);
+  padding-bottom: 30px;
 }
 
 /* Футер */
