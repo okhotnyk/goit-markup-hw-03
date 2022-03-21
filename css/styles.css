@@ -1,0 +1,237 @@
+:root {
+  /* Palette */
+  --brand-accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
+  --brand-background: #2f303a;
+  --second-background: #f5f4fa;
+  /*    var(--second-background) is also for buttons */
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --contrast-text-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--title-text-color);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo-color {
+  color: var(--brand-accent-color);
+}
+
+.link-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.link-logo:visited {
+  color: #000000;
+}
+/* Site navigation */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-navigation,
+.contact-navigation {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand-accent-color);
+}
+
+.site-navigation .nav-link.current {
+  color: var(--brand-accent-color);
+}
+
+/* Menu Contacts */
+
+.contact-item {
+  color: var(--primary-text-color);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--brand-accent-color);
+}
+
+.hero {
+  background-color: var(--brand-background);
+}
+
+.hero h1 {
+  color: var(--contrast-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  padding-top: 200px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+  padding-right: 452px;
+  /* why right padding doesn't work? */
+}
+
+.button {
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: var(--brand-accent-color);
+  color: var(--contrast-text-color);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--accent-color-hover);
+}
+
+/* Наши особенности */
+
+.particularities .section-title {
+  display: none;
+}
+
+.item-title {
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.item-text {
+  color: var(--primary-text-color);
+}
+
+/* What we do */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 300px;
+
+  text-align: center;
+}
+
+/* Team */
+
+.team {
+  background-color: var(--second-background);
+}
+
+.team-card {
+  background-color: var(--contrast-text-color);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.team-name {
+  font-weight: 500;
+  color: var(--title-text-color);
+}
+
+.team-position {
+  color: var(--primary-text-color);
+}
+
+/* Футер */
+.footer {
+  background-color: var(--brand-background);
+  color: var(--contrast-text-color);
+
+  padding-top: 30px;
+  padding-left: 90px;
+}
+
+.logo-negative,
+.logo-negative:visited {
+  color: var(--contrast-text-color);
+}
+
+.address-negative {
+  color: var(--contrast-text-color);
+  font-style: normal;
+}
+
+.address-contact {
+  color: var(--contrast-text-color);
+  opacity: 60%;
+}
+
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--brand-accent-color);
+}
+
+/* Styles for portfolio.html */
+
+.examples .title {
+  display: none;
+}
+
+.button.secondary {
+  background-color: var(--second-background);
+  color: var(--title-text-color);
+  line-height: 1.63;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--brand-accent-color);
+  color: var(--contrast-text-color);
+}
+
+.example-cards {
+  background-color: var(--second-background);
+}
+
+.example-card {
+  background-color: var(--contrast-text-color);
+}
+
+.example-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.example-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
