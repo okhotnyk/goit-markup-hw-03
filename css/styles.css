@@ -22,6 +22,8 @@ body {
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   padding: 0px 15px;
   outline: 2px solid tomato;
@@ -32,13 +34,6 @@ body {
   padding-bottom: 94px;
 }
 
-.no-margin-top {
-  margin-top: 0px;
-}
-.no-margin-bottom {
-  margin-bottom: 0px;
-}
-
 h1,
 h2,
 h3,
@@ -46,8 +41,13 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .link {
   text-decoration: none;
+}
+
+.page-header {
+  background-color: var(--second-background);
 }
 
 .logo-color {
@@ -105,6 +105,7 @@ p {
 
 .hero {
   background-color: var(--brand-background);
+  text-align: center;
 }
 
 .hero h1 {
@@ -116,17 +117,27 @@ p {
   text-transform: uppercase;
 
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 30px;
   text-align: center;
   /* why right padding doesn't work? */
 }
 
+.hero.button {
+  margin-bottom: 200px;
+}
+
 .button {
+  display: inline-block;
   font-size: 16px;
   line-height: 1.88;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: transparent;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .button.primary {
@@ -162,7 +173,6 @@ p {
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
-  padding-top: 94px;
   margin-bottom: 50px;
 
   text-align: center;
@@ -204,8 +214,9 @@ p {
   background-color: var(--brand-background);
   color: var(--contrast-text-color);
 
-  padding-top: 30px;
-  padding-left: 90px;
+  padding-top: 75px;
+  padding-bottom: 45px;
+  padding-left: 48px;
 }
 
 .logo-negative,
@@ -213,13 +224,21 @@ p {
   color: var(--contrast-text-color);
 }
 
+.logo-margin {
+  margin-bottom: 20px;
+}
+
 .address-negative {
+  display: inline-block;
+  margin-bottom: 9px;
   color: var(--contrast-text-color);
   font-style: normal;
 }
 
 .address-contact {
+  display: inline-block;
   color: var(--contrast-text-color);
+  margin: 100px
   opacity: 60%;
 }
 
@@ -254,16 +273,23 @@ p {
   background-color: var(--contrast-text-color);
 }
 
+.example-photo {
+  margin-bottom: 20px;
+}
+
 .example-name {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .example-type {
+  display: inline-block;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
 }

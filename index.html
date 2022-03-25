@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!-- header -->
-    <header>
+    <header class="page-header">
     <div class="container">
         <!-- logo -->
        <a class="link-logo link" href="/index.html"><span class="logo-color">Web</span>Studio</a>
@@ -36,9 +37,9 @@
         <section class="hero">
             <!-- Hero -->
             <div class="container">
-            <h1 class="no-margin-top">Эффективные решения <br>
+            <h1>Эффективные решения <br>
                 для вашего бизнеса</h1>
-            <button type="button" class="button primary">Заказать услугу</button>
+            <button type="button" class="button primary hero">Заказать услугу</button>
         </section>
             </div>
 
@@ -61,14 +62,14 @@
                 </li>
                 <li>
                     <h3 class="item-title">Современные технологии</h3>
-                    <p class="item-text no-margin-bottom">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
             </div>
         </section>   
          <!-- what we do (production) --> 
         <section class="production">
-            <div class="container">
+            <div class="container padding">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="list">
                 <li><img src="images/box1-sq.jpg" alt="схема алгоритма и руки на клавиатуре" title="Разработка" width="370" height="294"></li>
@@ -80,7 +81,7 @@
 
         <!-- our team 🤓 -->
         <section class="team">
-        <div class="container">
+        <div class="container padding">
             <h2 class="section-title">Наша команда</h2>
             <ul class="list">
                 <li class="team-card">
@@ -109,15 +110,19 @@
 
     </main>
 <!-- footer -->
-    <footer class="footer">
+    <footer class="footer container">
     <!-- logo -->
+    <div class="logo-margin">
     <a class="link-logo logo-negative link" href="/index.html"><span class="logo-color">Web</span>Studio</a>
+    </div>
+    <div class="address-negative">
     <address class="address-negative">г. Киев, пр-т Леси Украинки, 26
         <ul class="address-list list">
             <li><a class="address-contact link" href="mailto:info@example.com">info@example.com</a></li>
             <li><a class="address-contact link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
     </address>
+    </div>
     </footer>
 
 </body>
