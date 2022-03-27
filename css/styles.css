@@ -72,15 +72,44 @@ p {
   margin: 0;
 }
 
-.site-navigation,
-.contact-navigation {
+/* styles for flex  */
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav .item-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.site-nav .item {
+  /* .nav .item-contact { */
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 200px;
+}
+
+.contact-nav > .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav,
+.contact-nav {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
 .nav-link {
+  display: block;
   color: var(--title-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-link:hover,
@@ -238,7 +267,7 @@ p {
 .address-contact {
   display: inline-block;
   color: var(--contrast-text-color);
-  margin: 100px
+  margin: 100px;
   opacity: 60%;
 }
 
