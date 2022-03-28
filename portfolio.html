@@ -14,21 +14,22 @@
         rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- header -->
+    <header class="container main-nav">
         <!-- logo -->
-        <a class="link-logo link" href="/index.html"><span class="logo-color">Web</span>Studio</a>
+        <a class="link-logo link item-logo" href="/index.html"><span class="logo-color">Web</span>Studio</a>
         <!-- navigation to other pages -->
         <nav>
-            <ul class="site-navigation list">
-                <li><a class="nav-link link" href="./index.html">Студия</a></li>
-                <li><a class="nav-link link current" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-link link" href="">Контакты</a></li>
+            <ul class="site-nav list nav">
+                <li class="item"><a class="nav-link link " href="./index.html">Студия</a></li>
+                <li class="item"><a class="nav-link link current" href="./portfolio.html">Портфолио</a></li>
+                <li class="item"><a class="nav-link link" href="">Контакты</a></li>
             </ul>
         </nav>
         <!-- contacts -->
-        <ul class="contact-navigation list">
-            <li><a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contact-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contact-nav list nav">
+            <li class="item"><a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"><a class="contact-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
 <!-- main -->
@@ -36,21 +37,21 @@
     <section class="examples">
         <h1 class="title"> Examples of our projects</h1>
     <!-- Filter buttons  -->
-        <ul class="filter list">
-            <li><button type="button" class="button secondary">Все</button>
+        <ul class="filter list container">
+            <li class="item"><button type="button" class="button secondary">Все</button>
             </li>
-            <li><button type="button" class="button secondary">Веб-сайты</button>
+            <li class="item"><button type="button" class="button secondary">Веб-сайты</button>
             </li>
-            <li><button type="button" class="button secondary">Приложения</button>
+            <li class="item"><button type="button" class="button secondary">Приложения</button>
             </li>
-            <li><button type="button" class="button secondary">Дизайн</button>
+            <li class="item"><button type="button" class="button secondary">Дизайн</button>
             </li>
-            <li><button type="button" class="button secondary">Маркетинг</button>
+            <li class="item"><button type="button" class="button secondary">Маркетинг</button>
             </li>
         </ul>
 
     <!-- Cards of examples-->
-    <ul class="expamples-cards list">
+    <ul class="expamples-cards list container">
     <li class="example-card">
         <a class="link" href="">
             <img src="images/img-portfolio/img-1.jpg" alt="Экран ноутбука с изображением лиц" width="370" height="294" class="example-photo">
@@ -119,15 +120,19 @@
 </main>
 
 <!-- footer -->
-    <footer class="footer">
+    <footer class="footer container">
         <!-- logo -->
-        <a class="link-logo logo-negative link" href="/index.html"><span class="logo-color">Web</span>Studio</a>
-        <address class="address-negative">г. Киев, пр-т Леси Украинки, 26
-            <ul class="address-list list">
-                <li><a class="address-contact link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="address-contact link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="logo-margin">
+            <a class="link-logo logo-negative link" href="/index.html"><span class="logo-color">Web</span>Studio</a>
+        </div>
+        <div class="address-negative">
+            <address class="address-negative">г. Киев, пр-т Леси Украинки, 26
+                <ul class="address-list list">
+                    <li><a class="address-contact link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="address-contact link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
     
 </body>
