@@ -54,7 +54,7 @@ p {
   margin-right: auto;
 }
 
-.container.padding {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -145,27 +145,25 @@ p {
   color: var(--brand-accent-color);
 }
 
+/* ---- hero ---- */
 .hero {
+  width: 1600px;
+  margin: 0 auto;
+  align-content: middle;
   background-color: var(--brand-background);
   text-align: center;
 }
 
 .hero h1 {
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   color: var(--contrast-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  padding-top: 200px;
-  padding-bottom: 30px;
-  text-align: center;
-  /* why right padding doesn't work? */
-}
-
-.hero.button {
-  margin-bottom: 200px;
 }
 
 .button {
@@ -192,6 +190,10 @@ p {
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--accent-color-hover);
+}
+
+.hero .button {
+  margin-bottom: 200px;
 }
 
 /* Наши особенности */
@@ -275,9 +277,11 @@ p {
 
 /* Футер */
 .footer {
+  width: 1600px;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-
+  padding-left: 200px;
   background-color: var(--brand-background);
   color: var(--contrast-text-color);
 }
@@ -291,25 +295,42 @@ p {
   margin-bottom: 20px;
 }
 
+/* --- address --- */
+
 .address-negative {
   display: inline-block;
-  margin-bottom: 9px;
 
   color: var(--contrast-text-color);
   font-style: normal;
+  font-weight: 400;
 }
 
-.address-contact {
-  display: inline-block;
-  margin: 9px;
+/* --- list of contacts --- */
 
+.no-padding {
+  padding-bottom: 0px;
+}
+
+.contact-link {
+  padding-bottom: 9px;
   color: var(--contrast-text-color);
   opacity: 60%;
 }
 
-.address-contact:hover,
-.address-contact:focus {
+.address-link {
+  padding-bottom: 9px;
+  color: var(--contrast-text-color);
+}
+
+.address-link:hover,
+.address-link:focus,
+.contact-link:hover,
+.contact-link:focus {
   color: var(--brand-accent-color);
+}
+
+.contact-item:last-child > a {
+  padding-bottom: 0px;
 }
 
 /* Styles for portfolio.html */
