@@ -42,7 +42,7 @@ p {
 .container {
   width: 1200px;
   padding: 0px 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   margin-left: auto;
   margin-right: auto;
 }
