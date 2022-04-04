@@ -42,7 +42,7 @@ p {
 .container {
   width: 1200px;
   padding: 0px 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -365,8 +365,7 @@ p {
 .filter {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter .item + .item {
@@ -396,9 +395,7 @@ p {
 }
 
 .example-description {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 24px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -406,7 +403,6 @@ p {
 .expamples-cards {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 /* --- grid --- */
