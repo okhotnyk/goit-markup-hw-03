@@ -48,10 +48,7 @@ p {
 }
 
 .border-line {
-  width: 1600px;
   border-bottom: 1px solid #ececec;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section {
@@ -147,16 +144,15 @@ p {
 
 /* ---- hero ---- */
 .hero {
-  width: 1600px;
-  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   align-content: middle;
   background-color: var(--brand-background);
   text-align: center;
 }
 
 .hero h1 {
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-bottom: 30px;
 
   color: var(--contrast-text-color);
@@ -198,9 +194,17 @@ p {
 } */
 
 /* Наши особенности */
-
-.particularities .section-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .particularities.section {
@@ -305,10 +309,11 @@ p {
 .logo-negative {
   display: block;
   margin-bottom: 20px;
+  color: var(--contrast-text-color);
 }
 
 .logo-negative:visited {
-  color: inherit;
+  color: var(--contrast-text-color);
 }
 
 /* --- address --- */
@@ -339,7 +344,7 @@ p {
   color: var(--brand-accent-color);
 }
 
-.contact-item:not(:last-child) > a {
+.contact-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
