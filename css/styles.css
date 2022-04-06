@@ -8,6 +8,8 @@
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --contrast-text-color: #ffffff;
+  --border-line-color: #ececec;
+  --borders-card-color: #eeeeee;
 }
 
 body {
@@ -48,7 +50,7 @@ p {
 }
 
 .border-line {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-line-color);
 }
 
 .section {
@@ -351,10 +353,6 @@ p {
 
 /* Styles for portfolio.html */
 
-.examples .title {
-  display: none;
-}
-
 .button.secondary {
   background-color: var(--second-background);
   color: var(--title-text-color);
@@ -401,7 +399,7 @@ p {
 
 .example-description {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--borders-card-color);
   border-top: none;
 }
 
